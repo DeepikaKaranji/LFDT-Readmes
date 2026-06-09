@@ -1,4 +1,4 @@
-# Smoot [WIP]
+# Smoot
 
 Welcome to **Smoot**, an open-source cross-chain interoperability framework under the [Linux Foundation Decentralized Trust (LFDT)](https://www.lfdecentralizedtrust.org). Smoot provides a modular, extensible bridge infrastructure for transferring assets and data across heterogeneous blockchain networks.
 
@@ -7,17 +7,15 @@ Welcome to **Smoot**, an open-source cross-chain interoperability framework unde
 
 ## What is Smoot?
 
-Smoot is a cross-chain bridge framework designed to enable secure, verifiable asset transfers between different blockchain networks. The project originated as a Stellar–Polygon asset bridge and has since evolved into a general-purpose interoperability solution that can be extended to support additional chains.
+Built with care by the [Wanchain](https://www.wanchain.org/) team and released to the open source community, Smoot is a modular, reusable, vendor-agnostic interoperability framework for homogeneous and heterogeneous chain-to-chain interactions. Compliant with the Enterprise Ethereum Alliance (EEA)’s DLT Interoperability Specification, Smoot reflects a shared vision for a more open and connected decentralized future.
 
 Smoot's architecture is organized into distinct layers:
 
-- **Application Layer (`apps/`)** — User-facing interfaces including a GUI for interacting with the bridge, initiating transfers, and monitoring transaction status.
-- **Contract Layer (`contracts/`)** — On-chain smart contracts (Solidity, Rust) that handle locking, minting, burning, and releasing of assets on each supported chain. Includes reference implementations such as ERC-3643 compliant token contracts.
-- **Agent / Relay Layer (`agent/`)** — Off-chain relay services that listen for cross-chain events, verify proofs, and submit corresponding transactions on destination chains.
-- **SDK Layer (`sdks/`)** — Developer libraries for programmatically interacting with the bridge infrastructure.
-- **Services (`services/`)** — Supporting microservices for the bridge ecosystem.
+- **The Smoot Messaging Layer** – The Smoot Messaging Layer facilitates the secure exchange of data between distinct decentralized networks while ensuring data integrity and validity at every step.
+- **The Smoot Function Call Layer** – The Smoot Function Call Layer enables the uninterrupted execution of operations across multiple distinct decentralized networks, removing barriers between chains.
+- **The Smoot Application Layer** – The Smoot Application Layer orchestrates complex logic and workflows across distinct decentralized networks, unlocking unified cross-chain experiences. 
 
-This layered design allows developers to build cross-chain applications on top of Smoot, customize individual components, or extend the framework to support new blockchain networks.
+You can read more about it [here](https://www.lfdecentralizedtrust.org/blog/meet-smoot-one-framework-to-connect-all-chains)
 
 ## Supported Standards
 
@@ -28,9 +26,6 @@ Smoot currently supports the following token standards and integration targets:
 | ERC20 | Supported | Fungible token transfers through the bridge framework |
 | ERC721 | Supported | NFT transfer support |
 | ERC3643 | Supported | Permissioned token support; implemented in a way that is compatible with ERC20-style interactions |
-| Stellar | Supported / Origin implementation | Smoot originated from a Stellar–Polygon asset bridge |
-| Polygon | Supported / Origin implementation | Part of the original Stellar–Polygon bridge implementation |
-| Cardano | In progress | Integration is pending and under review |
 
 Additional standards and chain integrations may be added based on roadmap priorities, community demand, and partner contributions.
 
@@ -64,7 +59,6 @@ Additional standards and chain integrations may be added based on roadmap priori
 1. **Explore the architecture** — Review the design documents in [`bridge/design/`](https://github.com/LFDT-Smoot/bridge/tree/main/design) and the docs in [`bridge/docs/`](https://github.com/LFDT-Smoot/bridge/tree/main/docs) to understand how Smoot works.
 2. **Set up locally** — Clone the [bridge](https://github.com/LFDT-Smoot/bridge) repository and follow the setup instructions in the README.
 3. **Try the examples** — XYZ directory demonstrates end-to-end cross-chain transfers. <!-- TODO: are there examples here? --> 
-4. **Read the contracts** — Smart contracts in `contracts/` are the on-chain component of the bridge and a good starting point for understanding the trust model.  <!-- TODO: check with maintainers -->
 
 ## Roadmap
 
@@ -83,26 +77,15 @@ We welcome community input on roadmap priorities. Please open an issue in the [b
 
 The following documents and links will help you understand Smoot's vision, governance, and community processes:
 
-- Our [Code of Conduct](https://www.lfdecentralizedtrust.org/code-of-conduct).
 - The [Smoot Technical Charter](https://github.com/LFDT-Smoot/governance/blob/main/Smoot%20Technical%20Charter%20Final%204-17-2025.md) describes the project's governance structure and decision-making processes.
 - Community presentations and recordings are available in the [Smoot YouTube playlist](https://www.youtube.com/playlist?list=PL0MZ85B_96CE-gF5178qvm0-kdt5xggPE).
 - All Smoot repositories are licensed under the [Apache 2.0 License](https://github.com/LFDT-Smoot/governance/blob/main/LICENSE).
+- Our [Code of Conduct](https://www.lfdecentralizedtrust.org/code-of-conduct).
 <!-- TODO: Add these files and uncomment the links
 - Our [CONTRIBUTING.md](https://github.com/LFDT-Smoot/bridge/blob/main/CONTRIBUTING.md) explains how to contribute code, documentation, and ideas.
 - Our [MAINTAINERS.md](https://github.com/LFDT-Smoot/bridge/blob/main/MAINTAINERS.md) lists the current project maintainers and their affiliations.
 - Our [SECURITY.md](https://github.com/LFDT-Smoot/bridge/blob/main/SECURITY.md) describes how to responsibly report security vulnerabilities. Do not post security issues publicly.
 -->
-
-### Files to Be Added
-
-The following standard LFDT project files are in progress, and will be updated soon:
-<!-- TODO: Maintainers: please create these in the `bridge` repository as soon as possible. -->
-
-- `CONTRIBUTING.md` — Contribution guidelines (coding standards, PR process, commit conventions)
-- `MAINTAINERS.md` — List of maintainers with names, organizations, and GitHub handles
-- `SECURITY.md` — Vulnerability disclosure and reporting policy
-- `CODE_OF_CONDUCT.md` — Or a link to the [LFDT Code of Conduct](https://www.lfdecentralizedtrust.org/code-of-conduct)
-- `ADOPTERS.md` — Organizations and projects using Smoot in production or development
 
 ## Discord Communication Channels
 
@@ -110,11 +93,7 @@ Discord is the primary communication platform for LFDT projects, including Smoot
 
 ### How to Join
 
-1. **Join the LFDT Discord Server** — Click the invite link: **[LFDT Discord](https://discord.gg/hyperledger)**. Create a free Discord account if you don't already have one.
-2. **Agree to the server rules** — You'll land in a welcome or rules channel. Read and accept the rules to unlock the full set of channels.
-3. **Find the Smoot channels** — Look for Smoot-related channels under the LFDT channel categories.
-
-<!-- TODO: Replace with actual Smoot Discord channel links once they exist -->
+1. **Join the LFDT Discord Server** — Click the invite link: **[LFDT Discord](https://discord.gg/hyperledger)**. Channel is #smoot-general
 
 | Channel | Purpose |
 |---|---|
@@ -127,23 +106,16 @@ Discord is the primary communication platform for LFDT projects, including Smoot
 
 Smoot holds regular community calls open to everyone. These are the best way to stay up to date, ask questions, and contribute to the project direction.
 
-| Meeting | Frequency | Calendar Link |
-|---|---|---|
-| Smoot Community Call | Bi-weekly | https://zoom-lfx.platform.linuxfoundation.org/meetings/smoot?view=week | 
+| Meeting | Calendar Link |
+|---|---|
+| Smoot Community Call |  | https://zoom-lfx.platform.linuxfoundation.org/meetings/smoot?view=week | 
 
 ### Meeting Recordings
 
 Past meeting recordings and presentations can be accessed through:
 
-1. **[LFX Individual Dashboard](https://openprofile.dev/)** — Create your profile, then check [My Meetings](https://openprofile.dev/my-meetings) for recordings of meetings you're registered for.
+1. **[Youtube Smoot Playlist](https://www.youtube.com/playlist?list=PL0MZ85B_96CE-gF5178qvm0-kdt5xggPE)**
 2. **LFDT Calendar** — Browse past meeting recordings in the [LFDT project calendars](https://zoom-lfx.platform.linuxfoundation.org/meetings/lf-decentralized-trust).
-
-## LFX Tooling
-
-LFDT projects benefit from the Linux Foundation's LFX platform for project health monitoring and community management.
-
-- [**LFX Insights**](https://insights.linuxfoundation.org/) — Track project health metrics including contributor activity, commit trends, and community growth. [Learn more](https://insights.linuxfoundation.org/docs/introduction/what-is-insights/).
-- [**LFX Individual Dashboard**](https://openprofile.dev/) — Manage your open-source profile and access meeting recordings. [Learn more](https://docs.linuxfoundation.org/lfx/my-profile).
 
 ## Contributing
 
