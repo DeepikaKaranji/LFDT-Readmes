@@ -37,21 +37,6 @@ Additional standards and chain integrations may be added based on roadmap priori
 | [**bridge**](https://github.com/LFDT-Smoot/bridge) | The core bridge implementation — smart contracts, relay agents, SDKs, application interfaces, deployment scripts, and tests. This is where the main development happens. |
 | [**governance**](https://github.com/LFDT-Smoot/governance) | Project governance documents including the [Smoot Technical Charter](https://github.com/LFDT-Smoot/governance/blob/main/Smoot%20Technical%20Charter%20Final%204-17-2025.md), configuration files, and the project license. |
 
-### Inside the `bridge` Repository
-
-| Directory | Purpose |
-|---|---|
-| `apps/` | Front-end application and GUI for end users |
-| `contracts/` | On-chain smart contracts (Solidity, Rust) |
-| `agent/` | Off-chain relay/agent services |
-| `sdks/` | Developer SDKs for programmatic bridge interaction |
-| `services/` | Supporting backend services |
-| `deployment/` | Deployment scripts and infrastructure configuration |
-| `design/` | Architecture and design documents |
-| `docs/` | Project documentation |
-| `requirement/` | Requirements and specifications |
-| `test/` | Test suites and testing utilities |
-
 ## Getting Started
 
 <!-- TODO: Replace with actual getting-started steps once documentation is ready -->
@@ -87,13 +72,9 @@ The following documents and links will help you understand Smoot's vision, gover
 - Our [SECURITY.md](https://github.com/LFDT-Smoot/bridge/blob/main/SECURITY.md) describes how to responsibly report security vulnerabilities. Do not post security issues publicly.
 -->
 
-## Discord Communication Channels
+## Getting involved
 
-Discord is the primary communication platform for LFDT projects, including Smoot.
-
-### How to Join
-
-1. **Join the LFDT Discord Server** — Click the invite link: **[LFDT Discord](https://discord.gg/hyperledger)**. Channel is #smoot-general
+**Join the LFDT Discord Server** — Click the invite link: **[LFDT Discord](https://discord.gg/hyperledger)**. Channel is #smoot-general
 
 | Channel | Purpose |
 |---|---|
@@ -102,13 +83,11 @@ Discord is the primary communication platform for LFDT projects, including Smoot
 
 ## Community Meetings
 
-<!-- TODO: Replace with actual Zoom/LFX calendar links and registration URLs -->
-
 Smoot holds regular community calls open to everyone. These are the best way to stay up to date, ask questions, and contribute to the project direction.
 
 | Meeting | Calendar Link |
 |---|---|
-| Smoot Community Call |  | https://zoom-lfx.platform.linuxfoundation.org/meetings/smoot?view=week | 
+| Smoot Community Call | https://zoom-lfx.platform.linuxfoundation.org/meetings/smoot?view=week | 
 
 ### Meeting Recordings
 
